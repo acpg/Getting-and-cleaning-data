@@ -1,4 +1,4 @@
-library(plyr)
+
 setwd("~/Dropbox/COURSERA/DATA SCIENCE/03 Getting and Cleaning Data/Project")
 setwd('UCI HAR Dataset')
 
