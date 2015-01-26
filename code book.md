@@ -13,6 +13,17 @@ The run_analysis.R code does the following:
 * Creates a second, independent data set with the average of each variable for each activity and each subject.
 
 
+Inputs:
+* 30 volunteers
+* 6 activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+
+Outputs:
+* fs = 50 Hz
+* accelerometer: 3-axial linear acceleration
+* gyroscope: 3-axial angular velocity
+
+
 This last data set has each variable in a column and each observation in a row.
 
 The labels are the same as the initial data set, but now they are the means of those original values.
