@@ -1,7 +1,4 @@
 
-setwd("~/Dropbox/COURSERA/DATA SCIENCE/03 Getting and Cleaning Data/Project")
-setwd('UCI HAR Dataset')
-
 # Merges the training and the test sets to create one data set.
 
 X <- rbind(read.table("train/X_train.txt"), read.table("test/X_test.txt"))
@@ -28,8 +25,6 @@ dat <- cbind(subj, Y, X)
 
 # Creates a second, independent data set with the average of each variable for each activity and each subject.
 
-aux <- aggregate(x = dat[, 3:ncol(dat)], 
-                 by = list(subject = dat$subject, activity= dat$activity), 
-                 FUN = "mean", na.rm = T)
+aux <- aggregate(x = dat[, 3:ncol(dat)], by = list(subject = dat$subject, activity= dat$activity), FUN = "mean", na.rm = T)
 
-write.table(aux, "data_averages.txt", row.name = FALSE)
+write.table(aux, "data_averages.txt", row.names = FALSE)
